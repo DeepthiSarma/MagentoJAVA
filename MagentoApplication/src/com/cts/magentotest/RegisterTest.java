@@ -21,14 +21,12 @@ public class RegisterTest extends  LaunchWebDriver  {
 	}
 	
 	@Test(dataProvider ="registrationData")
-	public void RegistrationTest(String firstname,String lastname, String email, String password, 
-			String confirm,String country, String company, String role) {
+	public void RegistrationTest(String firstname,String lastname, String email, 
+			String company, String role,String country,String password,String confirm) {
 
 		HomePage.clickOnMyAccountIcon(driver);
 		LoginPage.clickOnRegister(driver);
-		RegisterForm.fillRegisterForm(driver, firstname, lastname, email, password, confirm, country, company, role);
-
-		//WebElement checkBox = driver.findElement(By.id("agree_terms"));
+		RegisterForm.fillRegisterForm(driver, firstname, lastname, email, company, role, country, password, confirm);
 //		if (!checkBox.isSelected()) {
 //		checkBox.click();	}
 	}

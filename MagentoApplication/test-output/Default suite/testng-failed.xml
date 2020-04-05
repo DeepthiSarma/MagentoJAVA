@@ -6,7 +6,7 @@
       <class name="com.cts.magentotest.RegisterTest">
         <methods>
           <include name="SetUp"/>
-          <include name="RegistrationTest"/>
+          <include name="RegistrationTest" invocation-numbers="0 1 2 3"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.cts.magentotest.RegisterTest -->
